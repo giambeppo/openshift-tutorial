@@ -35,6 +35,11 @@
 			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.wildfly.swarm</groupId>
+			<artifactId>container</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -44,6 +49,9 @@
 				<groupId>org.wildfly.swarm</groupId>
 				<artifactId>wildfly-swarm-plugin</artifactId>
 				<version>${version.wildfly.swarm}</version>
+				<configuration>
+					<mainClass>it.eustema.microservizi.MainSwarm</mainClass>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
