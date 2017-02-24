@@ -44,9 +44,6 @@
 				<groupId>org.wildfly.swarm</groupId>
 				<artifactId>wildfly-swarm-plugin</artifactId>
 				<version>${version.wildfly.swarm}</version>
-				<configuration>
-					<mainClass>it.eustema.microservizi.MainSwarm</mainClass>
-				</configuration>
 				<executions>
 					<execution>
 						<goals>
